@@ -79,9 +79,9 @@ void __cimplog_onboard(const char *module, const char *msg, ...)
         fclose(l_fOnBoardingLogFile);
     }
     else //fopen of on boarding file failed atleast write on the console
-    {
+    { 
         if(module != NULL)
-        {
+        {       
             printf("%s [%s] %s", l_cLocalTime, module, buf);
         }
         else
